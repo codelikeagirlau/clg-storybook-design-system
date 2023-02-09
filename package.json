@@ -1,13 +1,16 @@
 {
-  "name": "learnstorybook-design-system-template",
+  "name": "@sarahesbie/clg-storybook-design-system",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/cli": "^7.20.7",
     "@storybook/addon-a11y": "^6.5.16",
     "@storybook/jest": "^0.0.10",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "auto": "^10.40.0",
+    "cross-env": "^7.0.3",
     "jest": "^27.5.1",
     "polished": "^4.1.1",
     "prettier": "^2.8.3",
@@ -20,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -52,7 +55,16 @@
       }
     ]
   },
-  "babel": {},
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -80,6 +92,16 @@
     "@storybook/testing-library": "^0.0.13",
     "chromatic": "^6.17.0"
   },
-  "readme": "ERROR: No README data found!",
-  "_id": "learnstorybook-design-system-template@0.1.0"
+  "description": "Storybook design system for CLG",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codelikeagirlau/clg-storybook-design-system.git"
+  },
+  "author": " <sarah@codelikeagirl.com> (sarahesbie <sarah@codelikeagirl.com>)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codelikeagirlau/clg-storybook-design-system/issues"
+  },
+  "homepage": "https://github.com/codelikeagirlau/clg-storybook-design-system#readme"
 }
