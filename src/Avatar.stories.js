@@ -17,6 +17,14 @@ export default {
       options: ["tiny", "small", "medium", "large"],
     },
   },
+  /*
+   * More on Storybook parameters at:
+   * https://storybook.js.org/docs/react/writing-stories/parameters#component-parameters
+   */
+  parameters: {
+    componentSubtitle:
+      "Displays an image that represents a user or organization",
+  },
 };
 
 export const Standard = (args) => <Avatar {...args} />;
