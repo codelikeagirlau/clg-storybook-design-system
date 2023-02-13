@@ -1,7 +1,7 @@
 {
   "name": "@sarahesbie/clg-storybook-design-system",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@babel/cli": "^7.20.7",
     "@storybook/addon-a11y": "^6.5.16",
