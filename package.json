@@ -1,6 +1,6 @@
 {
-  "name": "@sarahesbie/clg-storybook-design-system",
-  "version": "0.1.0",
+  "name": "@codelikeagirlau/clg-storybook-design-system",
+  "version": "0.0.1",
   "private": false,
   "dependencies": {
     "@babel/cli": "^7.20.7",
@@ -98,10 +98,12 @@
     "type": "git",
     "url": "git+https://github.com/codelikeagirlau/clg-storybook-design-system.git"
   },
-  "author": " <sarah@codelikeagirl.com> (sarahesbie <sarah@codelikeagirl.com>)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/codelikeagirlau/clg-storybook-design-system/issues"
   },
-  "homepage": "https://github.com/codelikeagirlau/clg-storybook-design-system#readme"
+  "homepage": "https://github.com/codelikeagirlau/clg-storybook-design-system#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
