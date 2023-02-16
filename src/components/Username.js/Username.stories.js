@@ -2,7 +2,7 @@ import React from "react";
 import Username from "./Username";
 
 export default {
-  title: "Design System/Username",
+  title: "Components/Username",
   component: Username,
 };
 
