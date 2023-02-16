@@ -2,7 +2,7 @@ import React from "react";
 import Greeting from "./Greeting";
 
 export default {
-  title: "Design System/Greeting",
+  title: "Components/Greeting",
   component: Greeting,
 };
 
