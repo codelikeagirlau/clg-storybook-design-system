@@ -13,7 +13,6 @@ Default.args = {
   greeting: {
     id: "1",
     title: "Default Greeting",
-    state: "GREETING_STANDARD",
   },
 };
 
@@ -21,6 +20,5 @@ export const MinusNinetyDegrees = Template.bind({});
 MinusNinetyDegrees.args = {
   greeting: {
     ...Default.args.task,
-    state: "GREETING_MINUSNINETY",
   },
 };
