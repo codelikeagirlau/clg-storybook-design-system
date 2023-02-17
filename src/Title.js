@@ -11,17 +11,16 @@ const TitleType = styled.div`
   overflow: hidden;
   text-transform: uppercase;
   color: red;
-  // testing
 `;
 
-export function Title({ text, type, ...props }) {
+export function Title({ className, text, type, ...props }) {
   const titleContent = {
     h1: <h1>{text}</h1>,
     h2: <h2>{text}</h2>
   }[type];
 
   return (
-    <TitleType text={text} type={type}>{titleContent}</TitleType>
+    <TitleType className={className} text={text} type={type}>{titleContent}</TitleType>
   );
 }
 
@@ -44,6 +43,7 @@ export function Title({ text, type, ...props }) {
 
 
 Title.propTypes = {
+  className: PropTypes.string,
   text: PropTypes.string,
   type: PropTypes.oneOf(Object.keys(types)),
 };

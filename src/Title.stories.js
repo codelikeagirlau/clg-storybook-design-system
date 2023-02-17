@@ -22,7 +22,7 @@ export default {
 export const AllTitles = (args) => (
   <div>
     <Title {...args} />
-    <Title {...args} class="boo" type="h1" />
+    <Title {...args} className="custom-class" type="h1" />
     <Title {...args} type="h2" text="Testing text property" />
   </div>
 );
