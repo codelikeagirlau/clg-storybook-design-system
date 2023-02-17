@@ -5,77 +5,36 @@ import { Title } from "./Title";
 export default {
   title: "Design System/Title",
   component: Title,
-  /*
-   * More on Storybook argTypes at:
-   * https://storybook.js.org/docs/react/api/argtypes
-   */
   argTypes: {
-    size: {
+    type: {
       control: {
         type: "select",
       },
-      options: ["tiny", "small", "medium", "large"],
+      options: ["h1", "h2"],
     },
   },
-  /*
-   * More on Storybook parameters at:
-   * https://storybook.js.org/docs/react/writing-stories/parameters#component-parameters
-   */
   parameters: {
     componentSubtitle:
-      "Displays an image that represents a user or organization",
+      "Displays Title text that can be h1, h2, h3, h4 or h5",
   },
 };
 
-export const Standard = (args) => <Title {...args} />;
-Standard.args = {
-  size: "large",
-  username: "Tom Coleman",
-  src: "https://avatars2.githubusercontent.com/u/132554",
-};
-
-export const Sizes = (args) => (
+export const AllTitles = (args) => (
   <div>
-    {/* <Avatar {...args} size="large" />
-    <Avatar {...args} size="medium" /> */}
-    <Title {...args} size="small" />
-    <Title {...args} size="tiny" />
+    <Title {...args} />
+    <Title {...args} class="boo" type="h1" />
+    <Title {...args} type="h2" text="Testing text property" />
   </div>
 );
-Sizes.args = {
-  username: "Tom Coleman",
-  src: "https://avatars2.githubusercontent.com/u/132554",
+
+export const Heading1 = (args) => <Title {...args} />;
+Heading1.args = {
+  type: "h1",
+  text: "This is a long heading",
 };
 
-// export const Initials = (args) => (
-//   <div>
-//     <Avatar username="Tom Coleman" />
-//     <Avatar username="Dominic Nguyen" />
-//     <Avatar username="Kyle Suss" />
-//     <Avatar username="Michael Shilman" />
-//   </div>
-// );
-
-export const Loading = (args) => (
-  <div>
-    {/* <Avatar {...args} size="large" />
-    <Avatar {...args} size="medium" /> */}
-    <Title {...args} size="small" />
-    <Title {...args} size="tiny" />
-  </div>
-);
-Loading.args = {
-  loading: true,
+export const Heading2 = (args) => <Title {...args} />;
+Heading2.args = {
+  type: "h2",
+  text: "This is a long h2 heading",
 };
-
-export const Large = (args) => (
-  <div>
-    <Title loading size="large" />
-    <Title size="large" username="Tom Coleman" />
-    <Title
-      size="large"
-      username="Tom Coleman"
-      src="https://avatars2.githubusercontent.com/u/132554"
-    />
-  </div>
-);
