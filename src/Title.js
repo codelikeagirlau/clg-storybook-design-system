@@ -24,24 +24,6 @@ export function Title({ className, text, type, ...props }) {
   );
 }
 
-// I may have asked ChatGPT if there was a cleaner way of writing. 
-// They suggested this; The output is interesting and clean but I don't fully understand it...
-
-// export function Title({ text, type, ...props }) {
-
-//   const titleTags = {
-//     h1: "h1",
-//     h2: "h2"
-//   };
-
-//   const TitleTag = titleTags[type] || "h3";
-
-//   return (
-//     <TitleTag>{text}</TitleTag>
-//   );
-// }
-
-
 Title.propTypes = {
   className: PropTypes.string,
   text: PropTypes.string,
