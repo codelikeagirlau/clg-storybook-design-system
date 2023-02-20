@@ -13,7 +13,8 @@ const TitleType = styled.div`
   color: red;
 `;
 
-export function Title({ className, text, type, ...props }) {
+const Title = ({className, text, type, ...props}) => {
+
   const titleContent = {
     h1: <h1>{text}</h1>,
     h2: <h2>{text}</h2>
