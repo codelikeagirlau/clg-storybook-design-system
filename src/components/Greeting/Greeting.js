@@ -10,7 +10,7 @@ const Greeting = ({ greeting_text }) => {
   return (
     <>
       <div className="greeting">
-        <p>{greeting_text || "hi there!"}</p>
+        <p>{greeting_text}</p>
       </div>
     </>
   );
@@ -19,7 +19,13 @@ export default Greeting;
 
 Greeting.propTypes = {
   greeting: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
+    /**
+    The text you want your greeting component to display
+    */
+    greeting_text: PropTypes.string,
   }),
+};
+
+Greeting.defaultProps = {
+  greeting_text: "hi there!",
 };

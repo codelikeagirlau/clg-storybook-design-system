@@ -1,10 +1,10 @@
 import React from "react";
+import MastHead from "../../components/MastHead/MastHead";
 
-const PortalLayout = ({ some_prop }) => {
+const PortalLayout = () => {
   return (
     <div className="portal-layout">
-      <p>this is the portal layout</p>
-      <p>{some_prop}</p>
+      <MastHead />
     </div>
   );
 };

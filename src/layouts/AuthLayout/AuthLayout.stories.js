@@ -11,5 +11,6 @@ const Template = (args) => <AuthLayout {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  custom_text: "hello world",
+  src: "https://via.placeholder.com/300x300",
+  logo_alt: "asdfasdf",
 };

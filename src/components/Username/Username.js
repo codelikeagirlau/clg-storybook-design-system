@@ -6,11 +6,11 @@ import "./username.css";
  * A username component that accepts a single string
  */
 
-const Username = (props) => {
+const Username = ({ username_text }) => {
   return (
     <>
       <div className="username">
-        <p>{props.username_text}</p>
+        <p>{username_text}</p>
       </div>
     </>
   );
@@ -19,7 +19,6 @@ export default Username;
 
 Username.propTypes = {
   username: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
+    username_text: PropTypes.string.isRequired,
   }),
 };

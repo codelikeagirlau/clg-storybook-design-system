@@ -1,16 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Logo from "../../components/Logo/Logo";
+import Greeting from "../../components/Greeting/Greeting";
 
-const AuthLayout = ({ custom_text }) => {
+const AuthLayout = ({ src }) => {
   return (
     <div className="auth-layout">
-      <p>this is the auth layout</p>
-      <p>{custom_text}</p>
+      <Greeting />
+      <Logo src={src} />
     </div>
   );
 };
 export default AuthLayout;
-
-AuthLayout.defaultProps = {
-  custom_text: PropTypes.string.isRequired,
-};
