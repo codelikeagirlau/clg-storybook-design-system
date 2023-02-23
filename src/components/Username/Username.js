@@ -1,18 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./username.css";
-
-/**
- * A username component that accepts a single string
- */
 
 const Username = ({ username_text }) => {
   return (
-    <>
-      <div className="username">
-        <p>{username_text}</p>
-      </div>
-    </>
+    <div className="username">
+      <p>{username_text}</p>
+    </div>
   );
 };
 export default Username;
