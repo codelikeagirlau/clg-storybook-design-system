@@ -23,5 +23,3 @@ Greeting.propTypes = {
     title: PropTypes.string.isRequired,
   }),
 };
-
-// greeting accepts a prop of `greeting_text` and a prop of `rotation`
