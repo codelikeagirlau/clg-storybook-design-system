@@ -15,10 +15,3 @@ Default.args = {
     title: "Default Greeting",
   },
 };
-
-export const MinusNinetyDegrees = Template.bind({});
-MinusNinetyDegrees.args = {
-  greeting: {
-    ...Default.args.task,
-  },
-};
