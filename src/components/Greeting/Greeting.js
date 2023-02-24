@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./greeting.css";
+import "./greeting.module.scss";
 
 /**
  * A greeting component that accepts custom text and a jaunty angle

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { avatar } from "./avatar.module.css";
+import { avatar } from "./avatar.module.scss";
 
 /**
  * An avatar component that displays a custom image with a fallback

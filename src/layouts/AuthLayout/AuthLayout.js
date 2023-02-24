@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Logo from "../../components/Logo/Logo";
 import Greeting from "../../components/Greeting/Greeting";
+import "./auth-layout.module.scss";
 
 const AuthLayout = ({ src }) => {
   return (
