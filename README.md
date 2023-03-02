@@ -1,3 +1,1 @@
-# Code Like a Girl Design System Storybook
-
-write stuff here.
+This repo is not currently in use. 
