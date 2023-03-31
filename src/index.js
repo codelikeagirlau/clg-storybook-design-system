@@ -10,3 +10,7 @@ export { styles, global, animation, icons };
 // export * from "./Button";
 // export * from "./Icon";
 // export * from "./Link";
+
+export * from "../src/components/Greeting/Greeting";
+export * from "../src/components/Logo/Logo";
+export * from "../src/layouts/AuthLayout/AuthLayout";
