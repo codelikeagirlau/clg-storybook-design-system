@@ -1,0 +1,61 @@
+@import "./colours.module.scss";
+
+@font-face {
+  font-family: "pdu-regular";
+  src: url("../../assets/fonts/pdu-regular.woff") format("woff"),
+    url("../../assets/fonts/pdu-regular.woff2") format("woff2"),
+    url("../../assets/fonts/pdu-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "palmer-lake";
+  src: url("../../assets/fonts/palmer-lake.woff") format("woff"),
+    url("../../assets/fonts/palmer-lake.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+// Typography Variables
+$primary-font: "Inter", Helvetica, Arial, sans-serif;
+$heading-font: "pdu-regular", "Inter", Helvetica, Arial, sans-serif;
+$script-font: "palmer-lake", "Inter", Helvetica, Arial, sans-serif;
+
+.icon-withText {
+  height: 1.125rem;
+  display: inline-block;
+  top: 0.2rem;
+  position: relative;
+}
+
+.subtext {
+  font-family: $primary-font;
+  font-size: 0.85rem;
+  line-height: 1.125rem;
+  font-style: italic;
+
+  svg {
+    @extend .icon-withText;
+  }
+}
+
+.label {
+  font-family: $primary-font;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+}
+
+.linkAdd {
+  @extend .label;
+  color: $accent-colour;
+  text-decoration: none;
+  display: block;
+
+  svg {
+    @extend .icon-withText;
+    width: 1.125rem;
+  }
+}

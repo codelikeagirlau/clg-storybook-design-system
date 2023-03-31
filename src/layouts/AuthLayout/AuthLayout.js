@@ -1,14 +1,21 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Logo from "../../components/Logo/Logo";
 import Greeting from "../../components/Greeting/Greeting";
-import "./auth-layout.module.scss";
+import * as styles from "./AuthLayout.module.scss";
+// import "./AuthLayout.scss";
 
-const AuthLayout = ({ src }) => {
+const AuthLayout = ({ heading, children, logoSrc, logoAlt }) => {
   return (
-    <div className="auth-layout">
-      <Greeting />
-      <Logo src={src} />
+    <div className={styles.authLayout}>
+      <header className={styles.authHeader}>
+        <div className={styles.authHeaderWrapper}>
+          <Greeting greeting_text="Hi! Welcome!" />
+          <Logo src={logoSrc} alt={logoAlt} />
+          <h1 className={styles.authHeading}>{heading}</h1>
+        </div>
+      </header>
+      <main>{children}</main>
+      <footer></footer>
     </div>
   );
 };

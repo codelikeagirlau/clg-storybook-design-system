@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { greeting } from "./greeting.module.scss";
+import * as styles from "./Greeting.module.scss";
 
 /**
  * A greeting component that accepts custom text and a jaunty angle
@@ -9,7 +9,7 @@ import { greeting } from "./greeting.module.scss";
 const Greeting = ({ greeting_text }) => {
   return (
     <>
-      <div className={greeting}>
+      <div className={styles.greeting}>
         <p>{greeting_text}</p>
       </div>
     </>
